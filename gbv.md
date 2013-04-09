@@ -4,7 +4,18 @@
 
 # Introduction
 
-This ontology defines some concepts used by the GBV library network.
+This ontology defines some concepts used by the [GBV library network](http://www.gbv.de/). 
+The ontology is available in [Turtle Format](gbv.ttl) and in [RDF/XML](gbv.owl).
+
+# Revision history
+
+This specification is generated from source file
+[gbv.md](https://github.com/gbv/gbv-ontology/blob/master/gbv.d://github.com/jakobib/makespec)
+in [Pandoc Markdown](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
+via [makespec](https://github.com/jakobib/makespec). The file is managed in a public git repository
+at <https://github.com/gbv/gbv-ontology>.
+
+GIT_CHANGES
 
 # Namespaces and prefixes
 
@@ -153,3 +164,23 @@ gbv:ppn a rdfs:Datatype ;
     rdfs:isDefinedBy <> ;
     rdfs:label "PPN identifier"@en .
 ~~~
+
+# Related ontologies
+
+Domain specific ontologies are preferenced over GBV ontology if possible. The
+following ontologies include more library related concepts:
+
+* [Simple Service Status Ontology](http://purl.org/ontology/ssso) (SSSO)
+* [Patrons Account Information Ontology](http://purl.org/ontology/paia) (PAIA)
+  *work in progress*
+* [Document Availability Information Ontology](http://purl.org/ontology/daia) (DAIA)
+  *new version being worked on at <http://github.com/gbv/daiaspec>*
+* Experimental ["library" extension vocabulary](http://experimental.worldcat.org/ontology/library.owl)
+  for use with Schema.org (used in WorldCat).
+* ...
+
+See also the [Library Linked Data incubator group](http://www.w3.org/2005/Incubator/lld/) of the W3C.
+
+A more detailed list of library related concepts to form a library ontology has been collected at
+<https://gist.github.com/nichtich/5300505>.
+
